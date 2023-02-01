@@ -1,7 +1,7 @@
 # Profile ![visitors](https://visitor-badge.glitch.me/badge?page_id=110754049.visitor-badge)    
 
-<h1 align="center">Hey, I'm Dhruv</h1>
-<h3 align="center">A developer from India</h3>
+<h1 align="center">Hey, I'm Dhruv.</h1>
+<h3 align="center">Developer | Hustler</h3>
 
 - 🔭 I’m currently working on **nothing atm**
 
