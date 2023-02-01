@@ -5,6 +5,8 @@
 
 - 🔭 I’m currently working on **nothing.**
 
+- 🎙️ What am I doing right now? **University.**
+
 - 🌱 I’m currently learning **Python.**
 
 - 📫 How to reach me **dhruvmohanbhat@gmail.com.**
