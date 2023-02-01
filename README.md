@@ -1,1 +1,1 @@
-# Profile  ![visitors](https://visitor-badge.glitch.me/badge?page_id=110754049&left_color=black&right_color=purple)
+# Profile  ![visitors](https://visitor-badge.glitch.me/badge?page_id=110754049&left_color=red&right_color=purple)
