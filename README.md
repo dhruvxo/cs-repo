@@ -3,13 +3,11 @@
 <h1 align="center">Hey, I'm Dhruv.</h1>
 <h3 align="center">Developer | Hustler</h3>
 
-- 🔭 I’m currently working on **nothing atm**
+- 🔭 I’m currently working on **nothing.**
 
-- 🌱 I’m currently learning **Python**
+- 🌱 I’m currently learning **Python.**
 
-- 📫 How to reach me **drutusofficial@gmail.com**
-
-- ⚡ Fun fact **I love myself**
+- 📫 How to reach me **dhruvmohanbhat@gmail.com.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
