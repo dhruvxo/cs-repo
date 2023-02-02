@@ -15,7 +15,7 @@ int main()
     printf("Enter elements\n");
     for(int i=0;i<n;i++)
     {
-        printf("%d",ptr(i));
+        printf("%d",ptr+i);
     }
     for(int i=0;i<n;i++)
     {
