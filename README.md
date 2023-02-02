@@ -1,5 +1,5 @@
 # Profile ![visitors](https://visitor-badge.glitch.me/badge?page_id=110754049.visitor-badge)    
-/header.png
+\header.png
 <h1 align="center">Hey, I'm Dhruv.</h1>
 <h3 align="center">Developer | Hustler</h3>
 
