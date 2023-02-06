@@ -25,6 +25,7 @@ void insert_begin(int value)
 		head=temp;
 	}
 }
+
 void insert_end(int value)
 {
 	struct node *temp;
@@ -83,6 +84,7 @@ void delete_begin()
 		free(ptr);
 	}
 }
+
 void delete_end()
 {
 	if (head== NULL)
@@ -122,6 +124,7 @@ void delete_middle(int ele)
 		free(ptr);
 	}
 }
+
 void display()
 {
 	if (head== NULL)
@@ -168,22 +171,34 @@ void search()
             ptr = ptr -> next;
         }
     }
-
 }
 
-
+void reverse()
+{
+	int c,p,n;
+	node *p=NULL,*c, *n=NULL
+	c=SLL->head
+	while(c!=NULL)
+	{
+		n=c->next;
+		c->next=p;
+		p=c;
+		c=n;
+	}
+}
 
 void main()
 {
 	int value,ele,ch;
 	printf("1. Insert_begin \n");
 	printf("2. Insert_end \n");
-	printf("3. Insert_After_specified_element \n");
-	printf("4. delete_begin \n");
-	printf("5. delete_end \n");
-	printf("6. delete_middle \n");
-	printf("7. exit \n");
+	printf("3. Insert_after_specified_element \n");
+	printf("4. Delete_begin \n");
+	printf("5. Delete_end \n");
+	printf("6. Delete_middle \n");
+	printf("7. Exit \n");
     printf("8. Search \n");
+	printf("9. Reverse \n");
 
 	while(1)
 	{
@@ -247,6 +262,10 @@ void main()
 				{
 				    search();
                 }
+				case 9:
+				{
+					reverse();
+				}
 		}
 	}
 }	
