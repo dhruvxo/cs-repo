@@ -175,9 +175,8 @@ void search()
 
 void reverse()
 {
-	int c,p,n;
-	node *p=NULL,*c, *n=NULL
-	c=SLL->head
+	struct node *p=NULL,*c, *n=NULL;
+	c=p->head;
 	while(c!=NULL)
 	{
 		n=c->next;
@@ -269,6 +268,3 @@ void main()
 		}
 	}
 }	
-
-
-
