@@ -176,14 +176,15 @@ void search()
 void reverse()
 {
 	struct node *p=NULL,*c, *n=NULL;
-	c=p->head;
-	while(c!=NULL)
+	c=sll->head;
+	while(c!=NULL)	
 	{
 		n=c->next;
 		c->next=p;
 		p=c;
 		c=n;
 	}
+	sll->head=p;
 }
 
 void main()
