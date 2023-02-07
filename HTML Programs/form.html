@@ -1,8 +1,25 @@
 <html>
     <head>
     <title>My First Webpage</title>
+    <style>
+        p:hover{
+            color:rgb(59, 59, 59);
+            background-color:rgb(150, 150, 150);
+            font-size:30;
+        }
+        ul:hover,ol:hover{
+            background-color:rgb(150, 150, 150);
+        }
+        form:hover{
+            background-color:rgb(230, 230, 230);
+        }
+        html:active{
+            background-color:rgb(0, 0, 0);
+        }
+    </style>
     </head>
     <body>
+        <h1 style="color:rgb(59, 59, 59);background:rgb(150, 150, 150); font-size:50"> Example Form</h1>
         <fieldset>
 <form>
     First Name:<input type="text" name="fname" autofocus required placeholder="Enter your first name">
@@ -10,6 +27,34 @@
     Last Name:<input type="text" name="lname" required placeholder="Enter your last name">
     <br/><br/>
     DOB: <input type="date">
+    <ol>
+        <li style="color:violet; font-weight:bold; font-size:50">
+        Violet
+        </li>
+        <li style="color:indigo; font-size:45">
+            Indigo
+            </li>
+            <li style="color:blue; font-weight:bold; font-size:40">
+                Blue
+                </li>
+        </ol>
+        <ul>
+            <li style="color:green; font-size:35">
+                Green
+                </li>
+                <li style="color:rgb(205, 219, 2); font-weight:bold; font-size:30">
+                    Yellow
+                    </li>
+                    <li style="color:orange; font-size:25">
+                        Orange
+                        </li>
+                        <li style="color:red; font-weight:bold; font-size:20">
+                            Red
+                            </li>
+                </ul>
+                <p>
+                   Hover on me to expand
+                </p>
 </fieldset>
     <br/>
 <input type="submit" value="Submit">
