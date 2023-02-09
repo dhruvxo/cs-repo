@@ -1,9 +1,25 @@
 h1{
     color:red;
-    background-color: yellow;
+    background-color: rgb(255, 0, 255);
+}
+h2{
+    color:rgb(255, 196, 0);
+    background-color: rgb(162, 0, 255);
+}
+h3{
+    color:rgb(255, 230, 0);
+    background-color: rgb(0, 47, 255);
+}
+h6{
+    color:rgb(12, 145, 0);
+    background-color: rgb(0, 247, 255);
+}
+.c1{
+    font-size: 50;
+    font-family:'Franklin Gothic Medium';
 }
 
-p{
+#id69{
     font-size: 50;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
