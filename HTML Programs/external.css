@@ -2,7 +2,7 @@
     font-size: 50;
     font-family:'Franklin Gothic Medium';
     border-style:solid;
-    position:fixed;
+    position:absolute;
     top:10px;
     left:400px;
 }
@@ -21,7 +21,7 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-style:ridge;
     border-width: 0.2in;
-    position:absolute;
+    position:fixed;
     top:85px;
     left:320px;
 }
@@ -42,5 +42,5 @@
     border-style:double;
     position:absolute;
     top:350px;
-    left:330px;
+    left:360px;
 }
