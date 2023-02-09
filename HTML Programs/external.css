@@ -26,13 +26,29 @@
     left:320px;
 }
 
-.c4{
+.p1{
     font-size: 50;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-style:dotted;
     border-width: medium;
     position:relative;
-    top:120px;
+    top:230px;
+    left:200px;
+}
+
+.p2{
+    font-size: 50;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:200px;
+}
+
+.c5{
+    font-size: 50;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-style:dotted;
+    border-width: medium;
+    position:sticky;
+    top:300px;
     left:200px;
 }
 
