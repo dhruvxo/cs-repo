@@ -1,28 +1,46 @@
-.c4{
-    font-size: 50;
-    font-family:'Franklin Gothic Medium';
-    border-style:dotted;
-    border-width: medium;
-}
-.c3{
-    font-size: 50;
-    font-family:'Franklin Gothic Medium';
-    border-style:ridge;
-    border-width: medium;
-}
-.c2{
-    font-size: 50;
-    font-family:'Franklin Gothic Medium';
-    border-style:dashed;
-}
 .c1{
     font-size: 50;
     font-family:'Franklin Gothic Medium';
     border-style:solid;
+    position:fixed;
+    top:10px;
+    left:400px;
+}
+
+.c2{
+    font-size: 50;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-style:dashed;
+    position:relative;
+    top:500px;
+    left:300px;
+}
+
+.c3{
+    font-size: 50;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style:ridge;
+    border-width: medium;
+    position:absolute;
+    top:100px;
+    left:320px;
+}
+
+.c4{
+    font-size: 50;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style:dotted;
+    border-width: medium;
+    position:relative;
+    top:120px;
+    left:200px;
 }
 
 #id69{
     font-size: 50;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-style:double;
+    position:absolute;
+    top:350px;
+    left:330px;
 }
