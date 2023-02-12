@@ -1,1 +1,1 @@
-contains all my CS programs
+contains all of my CS programs

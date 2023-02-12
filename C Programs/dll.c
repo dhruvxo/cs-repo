@@ -19,12 +19,10 @@ void initList(LLIST*);
 void insertFront(LLIST*,int);
 void insertLast(LLIST*,int);
 void insertAtPos(LLIST*,int,int);
-void display(LLIST*);
+void display(LLIST*);	
 void destroyList(LLIST*);
 void deleteFront(LLIST*,int);
 void deleteLast(LLIST*,int);
-
-
 void initList(LLIST *dll)
 {
 	dll->head=NULL;
