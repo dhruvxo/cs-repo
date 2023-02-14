@@ -23,12 +23,24 @@
             // console.log(sum);
             // document.write("\nThe sum is ",sum);
             
-            function add(a,b){
-                return a+b;
+            // function add(a,b){
+            //     return a+b;
+            // }
+            // document.write("The sum using function is ", add(2,3));
+            // document.write("<br>");
+            // document.write(" The sum using the same function is ", add(7,3));
+            // document.write("<br>");
+            var arr=[4,23,3,1,7];
+            function add(a,b){  //remove when not using function
+                var sum=0;
+            for(i in arr)
+            {
+                sum=sum+arr[i];
             }
-            document.write("The sum using function is ", add(2,3));
-            document.write("<br>");
-            document.write(" The sum using the same function is ", add(7,3));
+            return sum;  //remove when not using function
+        }
+            document.write("The sum of array is ",add())
+            document.write(sum); //without using function
         </script>
 
     </body>
