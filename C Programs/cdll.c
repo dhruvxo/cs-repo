@@ -122,7 +122,7 @@ int main()
   int choice,ele,pos;
   
   do{
-	  printf("1.Insert Front\n 2. Insert Last\n 3.Insert at pos\n 4.display\n 5.destroy\n");
+	  printf("\n1.Insert Front\n 2.Insert Last\n 3.Insert at pos\n 4.display\n 5.destroy\n");
 	  printf("enter your choice:");
 	  scanf("%d",&choice);
 	  
