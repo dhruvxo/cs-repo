@@ -2,17 +2,32 @@
     <head>
     <title>style</title>
         <style>
-            body {
+            div.example {
+                background-color: lightgrey;
+                padding: 20px;
+            }
+            @media screen and (min-width: 1000px){
+                div.example{
+                    font-size:80px;
+                }
+            }
+            @media screen and (max-width: 1000px){
+                div.example{
+                    font-size:30px;
+                }
+            }
+            /* body {
                 background-color: rgb(255, 157, 0);
             }
             @media only screen and (max-width: 600px) {
             body {
                 background-color: rgb(234, 54, 84);
             }
-        }
+        } */
         </style>
         </head>
         <body>
-            <h1> Dhruv </h1>
+            <h1> I love myseeeeeeeeeeeeeeeeeeeelf </h1>
+            <div class="example">HEHEHEHEHEHEHEHE</div>
         </body>
 </html>
