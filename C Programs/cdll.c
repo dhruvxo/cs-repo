@@ -73,22 +73,22 @@ void insertLast(CDLL* cdll,int ele)
 // void insertAtPos(CDLL *cdll,int ele,int pos)
 // {
 // 	//int n=countnodes(cdll);
-// 	NODE *temp=getNode(ele);
-// 	if(pos==0)
-// 	{
-// 		temp->next=cdll->head;
-// 		cdll->head=temp;
-// 		return;
-// 	}
-// 	NODE *p=cdll->head, *q=NULL;
-// 	for(int i=1;i<pos;i++)
-// 	{
-// 		q=p;
-// 		p=p->next;
-// 	}
-// 	q->next=temp;
-// 	temp->next=p;
+// 	NODE *temp=gmalloc(sizeof(NODE));
+// 	temp->data=ele;
+// if(cdll->head==NULL)
+// {
+// 	temp->next=temp;
+// 	temp->prev=temp;
+// 	cdll->head=temp;
+// 	return;
 // }
+// NODE *p-cdll->head,*q=NULL;
+// for(i=0,i<pos;i++)
+// {
+	
+// }
+//}
+
 void display(CDLL* cdll)
 {
     NODE *p=cdll->head;
@@ -115,6 +115,28 @@ void display(CDLL* cdll)
 // 	cdll->head=NULL;
 // }
 
+void deleteFront(CDLL *cdll)
+{
+	if(cdll->head=NULL)
+	{
+		printf("List is Empty");
+		return;
+	}
+	if(p->next==p)
+	{
+	printf("%d\n",p->data);
+	cdll->head=NULL;
+	free(p);
+	return;
+	}
+	NODE *p=cdll->head;
+	cdll->head=p->next;
+	cdll->head->prev=p->prev;
+	p->prev->next=cdll->head;
+	printf("%d\n",p->data);
+	free(p);
+}
+
 int main()
 {
   CDLL dobj;
@@ -122,7 +144,7 @@ int main()
   int choice,ele,pos;
   
   do{
-	  printf("\n1.Insert Front\n 2.Insert Last\n 3.Insert at pos\n 4.display\n 5.destroy\n");
+	  printf("\n1.Insert Front\n 2.Insert Last\n 3.Insert at pos\n 4.display\n 5.DeleteFront\n");
 	  printf("enter your choice:");
 	  scanf("%d",&choice);
 	  
@@ -143,6 +165,8 @@ int main()
 			// 	   insertAtPos(&dobj,ele,pos);
 			// 	   break;
 			case 4:display(&dobj);
+				   break;
+			case 5:deleteFront(&dobj);
 				   break;
 	  }
   }while(choice<5);
