@@ -5,11 +5,17 @@
 
         <p id="demo">Hello World</p>
         <p>RR Campus</p>
+
+        <div class="example"> Element1</div>
+        <div class="example"> Element2</div>
         
         <script>
-            document.getElementById("demo").innerHTML="Hello PES";
-            const myElement = document.getElementById("demo");
-            myElement.style.color="red";
+            const collection =document.getElementsByClassName("example");
+            collection[1].innerHTML="Gello World";
+            // document.getElementById("demo").innerHTML="Hello PES";
+            // const myElement = document.getElementById("demo");
+            // myElement.style.color="red";
+            document.getElementById("demo").style.color="blue";
         </script>
     </body>
 </html>
