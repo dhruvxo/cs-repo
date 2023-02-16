@@ -1,21 +1,24 @@
 <html>
     <body>
-        <h1>The Document Object</h1>
-        <h2>The getElementById() Method</h2>
+        <h1>--------------The Document Object---------------</h1>
+        <h2><u>The getElementById() Method</u></h2>
+        <h3>Change the text and color of the first element with id="demo":</h3>
 
         <p id="demo">Hello World</p>
         <p>RR Campus</p>
 
+        <h3>Change the text of the first element with class="example":</h3>
         <div class="example"> Element1</div>
         <div class="example"> Element2</div>
         
         <script>
             const collection =document.getElementsByClassName("example");
             collection[1].innerHTML="Gello World";
-            // document.getElementById("demo").innerHTML="Hello PES";
+            collection[0].style.color="red";
+            document.getElementById("demo").innerHTML="Hello PES";
+            document.getElementById("demo").style.color="blue";
             // const myElement = document.getElementById("demo");
             // myElement.style.color="red";
-            document.getElementById("demo").style.color="blue";
         </script>
     </body>
 </html>
