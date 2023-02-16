@@ -1,0 +1,323 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "maVcV41ghr3j3grCREjRY",
+      "type": "text",
+      "x": 612,
+      "y": 252,
+      "width": 763,
+      "height": 125,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 1074195465,
+      "version": 536,
+      "versionNonce": 989308775,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1676529011409,
+      "link": null,
+      "locked": false,
+      "text": "ID                        #demo               getElementByID(\"demo\")\nClass                      .demo            getElementsByClassName(\"demo\")\nTag                     <tag name> like p    getElementsByTagName(\"p\")\nSelector (single)        Any CSS Selector       querySelector(\"selector\")\nSelector (all)                                   querySelectorAll(\"selector\")",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 118,
+      "containerId": null,
+      "originalText": "ID                        #demo               getElementByID(\"demo\")\nClass                      .demo            getElementsByClassName(\"demo\")\nTag                     <tag name> like p    getElementsByTagName(\"p\")\nSelector (single)        Any CSS Selector       querySelector(\"selector\")\nSelector (all)                                   querySelectorAll(\"selector\")"
+    },
+    {
+      "id": "L8DvJQCbkBK76EIKkxQ1l",
+      "type": "rectangle",
+      "x": 578,
+      "y": 242,
+      "width": 826,
+      "height": 146,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1329997449,
+      "version": 70,
+      "versionNonce": 2083944265,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1676529042429,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "QcRf54mh5zj0XBNCs9wQY",
+      "type": "line",
+      "x": 809,
+      "y": 243,
+      "width": 0,
+      "height": 145,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1073439335,
+      "version": 60,
+      "versionNonce": 1329778857,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1676529048105,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          145
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": null
+    },
+    {
+      "type": "line",
+      "version": 109,
+      "versionNonce": 1696926697,
+      "isDeleted": false,
+      "id": "tmUnnG4P2Uqr1op5AxwZZ",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 1045.264148755744,
+      "y": 244.18158684529365,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 2,
+      "height": 142.99999999999997,
+      "seed": 2039646761,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": null,
+      "updated": 1676529066378,
+      "link": null,
+      "locked": false,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          142.99999999999997
+        ]
+      ]
+    },
+    {
+      "id": "cX48c7KIEftlpwYqyxGab",
+      "type": "line",
+      "x": 579,
+      "y": 329,
+      "width": 823,
+      "height": 5,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 423191911,
+      "version": 119,
+      "versionNonce": 26913223,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1676529081550,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          823,
+          -5
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": null
+    },
+    {
+      "type": "line",
+      "version": 149,
+      "versionNonce": 2041232327,
+      "isDeleted": false,
+      "id": "WAzDdtMnpyTCCNTcxrNX7",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 582.3058086569608,
+      "y": 305.2223614078015,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 823,
+      "height": 5,
+      "seed": 2048064041,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": null,
+      "updated": 1676529089348,
+      "link": null,
+      "locked": false,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          823,
+          -5
+        ]
+      ]
+    },
+    {
+      "type": "line",
+      "version": 142,
+      "versionNonce": 1449800361,
+      "isDeleted": false,
+      "id": "2XtfzdY126RJzg__Jfzyf",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 580.3058086569608,
+      "y": 278.2223614078015,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 823,
+      "height": 5,
+      "seed": 1480919081,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": null,
+      "updated": 1676529094039,
+      "link": null,
+      "locked": false,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          823,
+          -5
+        ]
+      ]
+    },
+    {
+      "id": "SR8DBUlzX43iJvE4iB8lt",
+      "type": "text",
+      "x": 608,
+      "y": 211,
+      "width": 626,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 1572861321,
+      "version": 117,
+      "versionNonce": 1798885609,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1676529168574,
+      "link": null,
+      "locked": false,
+      "text": "Access Element By    Equivalent Selector              Method",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 18,
+      "containerId": null,
+      "originalText": "Access Element By    Equivalent Selector              Method"
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
