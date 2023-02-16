@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <title>itemfunc</title>
+    </head>
+        <script type="text/javascript">
+            function item(fname,lname,pno,city){
+                this.fname=fname;
+                this.lname=lname;
+                this.pno=pno;
+                this.city=city;
+            }
+            let item1=new item("Osama","Bin",9999999,"Afghanistan");
+            let item2=new item("Naps","Blownapart",4200000,"France");
+            let item3=new item("Dua","Lips",6969696969,"Albania");
+            let item4=new item("Camela","Cabells",00000000,"Spanish");
+            
+            item.prototype.show=function(){
+            document.write(this.fname+" "+this.lname+" "+this.pno+" "+this.city+"<br/>");
+        }
+        item1.show();
+        item2.show();
+        item3.show();
+        item4.show();
+        </script>
+        </html>
