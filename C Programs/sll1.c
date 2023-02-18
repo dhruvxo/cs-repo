@@ -415,5 +415,5 @@ void main()
             printf("Incorrect Choice\n");
         }
     }
-    return 0;
+    return;
 }
