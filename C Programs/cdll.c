@@ -122,15 +122,16 @@ void deleteFront(CDLL *cdll)
 		printf("List is Empty");
 		return;
 	}
+	NODE *p=cdll->head->next;
 	if(p->next==p)
 	{
+		cdll->head=NULL;
 	printf("%d\n",p->data);
-	cdll->head=NULL;
 	free(p);
 	return;
 	}
-	NODE *p=cdll->head;
-	cdll->head=p->next;
+	// NODE *p=cdll->head;
+	cdll->head->next=p->next;
 	cdll->head->prev=p->prev;
 	p->prev->next=cdll->head;
 	printf("%d\n",p->data);
@@ -144,7 +145,7 @@ int main()
   int choice,ele,pos;
   
   do{
-	  printf("\n1.Insert Front\n 2.Insert Last\n 3.Insert at pos\n 4.display\n 5.DeleteFront\n");
+	  printf("\n 1.Insert Front\n 2.Insert Last\n 3.Insert at Pos\n 4.Display\n 5.DeleteFront\n");
 	  printf("enter your choice:");
 	  scanf("%d",&choice);
 	  
@@ -169,6 +170,6 @@ int main()
 			case 5:deleteFront(&dobj);
 				   break;
 	  }
-  }while(choice<5);
+  }while(choice);
   return 0;
 }
