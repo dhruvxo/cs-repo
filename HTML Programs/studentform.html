@@ -2,21 +2,10 @@
     <head>
     <title>Student Form</title>
     <style>
-        p{
-            color:rgb(59, 59, 59);
-            background-color:rgb(150, 150, 150);
-            font-size:30;
-        }
         form{
             background-color:rgb(230, 230, 230);
         }
         html{
-            background-color:rgb(61, 61, 61);
-        }
-        .cls:hover{
-            background-color:rgb(61, 61, 61);
-        }
-        #id01:hover{
             background-color:rgb(61, 61, 61);
         }
     </style>
@@ -25,16 +14,28 @@
         <h1 style="color:rgb(59, 59, 59);background:rgb(150, 150, 150); font-size:50">Student Form</h1>
         <fieldset>
 <form>
-    First Name:<input type="text" name="fname" autofocus required placeholder="Enter your first name">
+    Student Name:<input type="text" name="fname" autofocus required placeholder="Enter your first name">
     <br/><br/>
-    Last Name:<input type="text" name="lname" required placeholder="Enter your last name">
+    SRN:<input type="text" name="lname" required placeholder="Enter your last name">
     <br/><br/>
-    DOB: <input type="date">
-                <p>Insert random paragraph lol</p>
+    College Name:<input type="text" name="lname" required placeholder="Enter your last name">
+    <br/><br/>
+    College Address:<textarea></textarea>
+    <br/><br/>
+    Branch:
+    <input type="checkbox" name="branch" value="CSE">CSE
+    <input type="checkbox" name="branch" value="ECE">ECE
+    <input type="checkbox" name="branch" value="MECH">MECH
+    <br/><br/>
+    Semester:
+    <input type="radio" name="sem" value="IV">IV
+    <input type="radio" name="sem" value="V">V
+    <input type="radio" name="sem" value="VI">VI
+    <br/><br/>
 </fieldset>
     <br/>
 <input type="submit" value="Submit">
-<input type="reset" value="Clear">
+<input type="reset" value="Reset">
 </form>
 </body>
 </html>
