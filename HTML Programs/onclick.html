@@ -1,0 +1,28 @@
+<html>
+    <head>
+    <title>Date and Time</title>
+    </head>
+    <body>
+
+        <h2>Javascript HTML Events</h2>
+        <p>Click below to display the date.</p>
+        <p id="demo"></p>
+        <button onclick="displayDate()">Click to know the time</button>
+        <button ondblclick="displayDate()">Double Click to know the time</button></br></br>
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="pic.png" alt="PES Logo" width="120px" height="200px">
+        <script>
+            function displayDate(){
+                document.getElementById("demo").innerHTML = Date();
+            }
+            document.querySelector("#demo").style.color = "brown";
+            function bigImg(image){
+                image.style.height="400px";
+                image.style.width="240px";
+            }
+            function normalImg(image){
+                image.style.height="200px";
+                image.style.width="120px";
+            }
+        </script>
+</body>
+</html>

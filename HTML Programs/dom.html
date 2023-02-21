@@ -10,7 +10,10 @@
         <h3>Change the text of the first element with class="example":</h3>
         <div class="example"> Element1</div>
         <div class="example"> Element2</div>
-        
+
+        <h4>QuerySelector</h4>
+        <h2 class="cls1">Lorem, ipsum.</h2>
+        <p class="cls1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perspiciatis quasi nulla sapiente unde eaque minima rerum deserunt molestiae. Porro dolorum sunt blanditiis cumque voluptatibus tempore dicta molestiae numquam accusamus!</p>
         <script>
             const collection =document.getElementsByClassName("example");
             collection[1].innerHTML="Gello World";
@@ -19,6 +22,13 @@
             document.getElementById("demo").style.color="blue";
             // const myElement = document.getElementById("demo");
             // myElement.style.color="red";
+
+            document.querySelector("h4").style.backgroundColor = "red";
+            // document.querySelector(".cls1").style.backgroundColor = "red"; //for class
+            const a=document.querySelectorAll(".cls1");
+            for(let i=0;i<a.length;i++){
+                a[i].style.backgroundColor = "blue";
+            }
         </script>
     </body>
 </html>

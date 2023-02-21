@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <h1>--------------The Document Object---------------</h1>
+        <h2 id="id1"><u>The querySelectorAll() Method</u></h2>
+
+        <p class="cls">Add a background color</p>
+        <h2 class="cls">A heading</h2>
+        <p class="cls">A paragraph</p>
+        <script>
+            document.querySelector("h1").style.color = "brown";
+            document.querySelector("#id1").style.backgroundColor = "gold";
+            document.querySelector("#id1").style.color = "brown";
+            const a=document.querySelectorAll(".cls");
+            for(let i=0;i<a.length;i++){
+                a[i].style.backgroundColor = "brown";
+                a[i].style.color = "gold";
+            }
+        </script>
+    </body>
+</html>
