@@ -1,0 +1,33 @@
+<html>
+    <head>
+    <title>Event Listener</title>
+    <head>
+<script>
+            function init(){
+                list=document.querySelectorAll("li");
+                for(let i in list)
+                list[i].onclick=handler;
+                document.querySelector("p").addEventListener("click", function(event){
+                    event.target.innerHTML="I was clicked";
+                        });
+                    }
+                    function handler(event){
+                        ev=event;
+                        console.log(event.target.innerHTML);
+                        event.target.style.color="blue";
+                        event.preventDefault();
+                    }
+</script>
+</head>
+<body onload="init()">
+    <div>
+        <p onclick="handler(event)">Subjects</p>
+        <ul>
+            <li>DScience</li>
+            <li>WT</li>
+            <li>Data Structures</li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <title>Student Form</title>
+    </head>
+<body>
+<h2><u>addEventListener()</u></h2>
+
+<button id="myBtn">Click for Time</button>
+
+<p id="demo"></p>
+<img id="image" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="pic.png" alt="PES Logo" width="120px" height="200px">
+<script>
+    document.getElementById("myBtn").addEventListener("dblclick", displayDate);
+            function displayDate()
+            {
+                document.getElementById("myBtn").innerHTML=Date();
+            }
+            function bigImg(image){
+                image.style.height="400px";
+                image.style.width="240px";
+            }
+            function normalImg(image){
+                image.style.height="200px";
+                image.style.width="120px";
+            }
+            document.getElementById("image");
+            addEventListener("click", function(){
+            });
+</script>
+</body>
+</html>

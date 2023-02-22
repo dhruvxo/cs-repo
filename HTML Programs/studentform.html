@@ -3,7 +3,10 @@
     <title>Student Form</title>
     <style>
         form{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             background-color:rgb(230, 230, 230);
+            position:absolute;
+            margin-left: 615px;     
         }
         html{
             background-color:rgb(61, 61, 61);
@@ -11,16 +14,16 @@
     </style>
     </head>
     <body align="center">
-        <h1 style="color:rgb(59, 59, 59);background:rgb(150, 150, 150); font-size:50">Student Form</h1>
-        <fieldset>
+        <h1 style="color:rgb(59, 59, 59);background:rgb(150, 150, 150); font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:50">Student Form</h1>
 <form>
-    Student Name:<input type="text" name="fname" autofocus required placeholder="Enter your first name">
+    <br/>
+    Student Name: <input type="text" name="fname" autofocus required placeholder="Enter name">
     <br/><br/>
-    SRN:<input type="text" name="lname" required placeholder="Enter your last name">
+    SRN: <input type="text" name="lname" required placeholder="Enter SRN">
     <br/><br/>
-    College Name:<input type="text" name="lname" required placeholder="Enter your last name">
+    College Name: <input type="text" name="lname" required placeholder="Enter college name">
     <br/><br/>
-    College Address:<textarea></textarea>
+    College Address: <textarea required placeholder="Enter college address"></textarea>
     <br/><br/>
     Branch:
     <input type="checkbox" name="branch" value="CSE">CSE
@@ -32,10 +35,9 @@
     <input type="radio" name="sem" value="V">V
     <input type="radio" name="sem" value="VI">VI
     <br/><br/>
-</fieldset>
-    <br/>
 <input type="submit" value="Submit">
 <input type="reset" value="Reset">
+<br/><br/>
 </form>
 </body>
 </html>
