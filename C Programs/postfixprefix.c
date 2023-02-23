@@ -42,7 +42,21 @@ char *infix2postfix(char *infix)
          else
          top--;   
         }
+        else if(isoperator(infix[i]))
+        {
+            while(top>-1 && precedence(infix[i])<precedence(stack[top]))
+            // if(precedence(infix[i])>stack[top])
+            postfix[j++]=stack[top--];
+            stack[++top]=infix[i];
+        }
     }
+    while(top>-1){
+        if(stack[top]=='(')
+        return "invalid expression";
+    postfix[j++]=stack[top--];
+    }
+    postfix[j]='\0';
+    return postfix;
 }
 
 int main()
