@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>EVENT</title>
+<style>
+.divStyle{
+    display: table-cell;
+    border: 5px solid rgb(148, 33, 163);
+    padding: 20px;
+    text-align:center;
+}
+.divtyle{
+    display: table-cell;
+    border: 5px solid rgb(235, 87, 255);
+    padding: 20px;
+    text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="DIV1" class="divStyle">
+        DIV1 (Bubbling)
+    <div id="DIV2" class="divStyle">
+        DIV2
+        <div id="DIV3" class="divStyle">
+            DIV3
+        </div>
+    </div>
+</div>
+<br/>
+<div id="DIV1" class="divtyle">
+    DIV1 (Capturing)
+<div id="DIV2" class="divtyle">
+    DIV2
+    <div id="DIV3" class="divtyle">
+        DIV3
+    </div>
+</div>
+</div>
+
+        <script type="text/javascript">
+            var divElements = document.getElementsByClassName('divStyle');
+            for(var i=0; i<divElements.length;i++)
+            {
+                divElements[i].addEventListener("click",clickHandler,false);
+            }
+            function clickHandler(event)
+            {
+                alert(this.getAttribute("id")+"click event handled");
+            }
+            var divElements = document.getElementsByClassName('divtyle');
+            for(var i=0; i<divElements.length;i++)
+            {
+                divElements[i].addEventListener("click",clickHandler,true);
+            }
+            function clickHandler(event)
+            {
+                alert(this.getAttribute("id")+"click event handled");
+            }
+            </script>
+</body>
+</html>
