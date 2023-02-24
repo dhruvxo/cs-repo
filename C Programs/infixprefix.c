@@ -1,9 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include <stdlib.h>
-
-#define SIZE 50
+#define SIZE 100
 
 int precedence(char c) {
   switch (c) {
@@ -138,11 +137,11 @@ int main() {
   char infix[SIZE], prefix[SIZE];
 int stack[SIZE];
 
-  int no_of_char;
+  int charno;
 int value;
   top = -1;
 
-  scanf("%d", &no_of_char);
+  scanf("%d", &charno);
   gets(infix);
 
   infix_to_prefix( &infix, &prefix, &stack, &top);
