@@ -3,6 +3,8 @@
 int queue[max]; //array declaration
 int front=-1;
 int rear=-1;
+void main()
+{
 // function to insert an element in a circular queue
 void enqueue(int element)
 {
@@ -41,4 +43,5 @@ void dequeue()
             printf("\nThe dequeued element is %d", queue[front]);
             front=(front+1)%max;
         }
+    }
 }
