@@ -15,7 +15,7 @@ void insert()
         printf("\nOVERFLOW\n");
         return;
     }
-    if(front==-1&&rear=-1)
+    if(front==-1 && rear=-1)
     {
         front=0;
         rear=0;
@@ -31,5 +31,47 @@ void insert()
 void delete()
 {
     int item;
-    
+    if (front == -1 || front>rear)
+    {
+        printf("\nUNDERFLOW\n");
+        return;
+    }
+    else
+    {
+         item=queue[front];
+        if(front == rear)
+        {
+            front=-1;
+            rear=-1;
+        }
+        else
+        {
+            front = front+1;
+            return;
+        }
+    }
+}
+
+void main()
+{
+    int choice;
+    while (1) {
+
+        printf("\n\t1. To insert list\n1. To delete list\n");
+
+        printf("\nEnter Choice :\n");
+        scanf("%d", &choice);
+
+        switch (choice) {
+        case 1:
+            insert();
+            break;
+            case 2:
+            delete();
+            break;
+        default:
+            printf("Incorrect Choice\n");
+        }
+    }
+    return;
 }
