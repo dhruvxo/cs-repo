@@ -3,14 +3,14 @@
         <title>JQuery</title>
         <script src="jquery-3.6.0.js"></script>
         <script>
-            $(document).ready(function(){
-                $("p").click(function(){
-                    $(this).hide();
-                });
-                $("button").click(function(){
-                    $("p:even").fadeOut();
-                });
-            });
+            // $(document).ready(function(){
+            //     $("p").click(function(){
+            //         $(this).hide();
+            //     });
+            //     $("button").click(function(){
+            //         $("p:even").fadeOut();
+            //     });
+            // });
             $(document).ready(function(){
             $("#hide").click(function(){
                 $("p").hide(500);
@@ -18,7 +18,16 @@
             $("#show").click(function(){
                 $("p").show("slow");
             });
+            $(document).ready(function(){
+            $("p").on("click mouseover",function(){
+                $(this).css("color","blue").html("I was hovered");
+            });
+            // $(document).ready(function(){
+            // $("p").click (function(){
+            //     $(event.target).css("color","blue").html("I was Clicked");
+            // });
         });
+    });
         </script>
     </head>
     <body>

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>JQuery Promise</title>
+        <script src="jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <h2><u>JQuery Promise</u></h2>
+        <p id="demo"></p>
+        <script>
+            function myDisplayer(dhruv){
+                document.getElementById("demo").innerHTML=dhruv;
+            }
+
+            let myPromise = new Promise(function(myResolve,myReject) {
+                let x=0;
+
+                if(x==0)
+                {
+                    myResolve("OK");
+                }
+                else
+                {
+                    myReject("ERROR");
+                }
+            });
+            myPromise
+            .then(function(value){myDisplayer(value);}
+            )
+            .catch(function(error){myDisplayer(error);}
+            )
+                
+        </script>
+    </body>
+</html>
+
+
+<!--let myPromise = new Promise(function(myResolve, myReject){
+// // "Producing Code" (May take some time)
+//     myResolve(); //when successful
+//     myReject(); //when error
+// });
+
+// // "Consuming Code" (Must wait for a fulfilled promise)
+// myPromise.then(
+//     function(value){//code if successful//},
+//         function(error) {//code if some error//}
+//     };
+// ) >
