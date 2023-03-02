@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>JQuery</title>
+        <script src="jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("p").click(function(){
+                    $(this).hide();
+                });
+                $("button").click(function(){
+                    $("p:even").fadeOut();
+                });
+            });
+            $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide(500);
+            });
+            $("#show").click(function(){
+                $("p").show("slow");
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <p>Instagram</p>
+        <p>Dhruv</p>
+        <p>Girls</p>
+        <button>Click me to hide all distractions</button>
+        <button id="hide">Click me to hide all</button>
+        <button id="show">Click me to show all</button>
+    </body>
+</html>
