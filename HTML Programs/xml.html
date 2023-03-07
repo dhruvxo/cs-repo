@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>XML</title>
+    </head>
+    <body>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            var str='{"name":"PESU", "place": "Bengaluru"}';
+            var obj=JSON.parse(str); //string to object
+            document.getElementById("demo1").innerHTML=obj.place;
+            str1=JSON.stringify(obj); //object to string
+            document.getElementById("demo2").innerHTML=str1;
+        </script>
+    </body>
+</html>
