@@ -34,7 +34,7 @@ void pop()
     {
         NODE *q=top;
         top=top->next;
-        printf("%d\n",q->data);
+        printf("\n%d\n",q->data);
         free(q);
     }
 }
@@ -48,7 +48,7 @@ void display()
     }
     while(q!=NULL)
     {
-        printf("%d\n",q->data);
+        printf("\n%d",q->data);
         q=q->next;
     }
 }
