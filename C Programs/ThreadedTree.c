@@ -87,7 +87,7 @@ void create(TREE *pt)
 
  pt->root=createNode(e);
   do{
-     printf("Enter info\n");
+     printf("Enter info of next node\n");
      scanf("%d",&e);
      p=pt->root;
      q=NULL;
