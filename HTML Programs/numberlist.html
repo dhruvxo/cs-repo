@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Number List</title>
+		<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+		<script crossdomain src=	"https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+	</head>
+	<body>
+		<div id="container"></div>
+		<script type="text/babel">
+            function ListItem(props) {
+                return<li>{props.value}</li>;
+            }
+            function NumberList(props){
+                const numbers = props.numbers;
+                const listItem=numbers.map((number) => 
+                <ListItem key={number.toString()} value={number} />);
+                return(
+                    <ol>
+                        {listItem}
+                        </ol>
+                        );
+            }
+            const numbers = [1,2,3,4,5];
+			ReactDOM.render(<NumberList numbers={numbers}/>,
+            document.querySelector("#container")); 
+		</script>
+	</body>
+</html>
