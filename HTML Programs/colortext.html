@@ -8,7 +8,7 @@
 	<body>
 		<div id="container"></div>
 		<script type="text/babel">
-		var colors = ['red','orange','blue','black','purple','grey']
+		var colors = ['red','orange','blue','black','purple','grey','yellow','pink','blue','green','lightblue']
 
         class CustomText extends React.Component {
             constructor(props){
@@ -19,9 +19,10 @@
                 };
                 this.changeText= ()=>{
                     if(this.textPara){
-                        let i=Math.floor(Math.random()*100)%5;
+                        let i=Math.floor(Math.random()*100)%8;
                         this.textPara.innerHTML=colors[i];
-                        this.textPara.syle.color=colors[i];
+                        this.textPara.style.color=colors[i];
+                        // this.textPara.style.backgroundColor=colors[i]; (for background color)
                     }
                 };
             }
@@ -30,9 +31,15 @@
             render(){
                 return (
                     <div>
-                )
+                        <h1 ref={this.setTextRef}>Click to change the color</h1>
+                        <input type="button" value="Change the color" onClick={this.changeText}/>
+                        </div>
+                );
             }
         }
+        ReactDOM.render(
+            <CustomText/>,document.body
+        )
 		</script>
 	</body>
 </html>
