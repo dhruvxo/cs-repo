@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Color Change</title>
+		<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+		<script crossdomain src=	"https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+	</head>
+	<body>
+		<div id="container"></div>
+		<script type="text/babel">
+		var colors = ['red','orange','blue','black','purple','grey']
+
+        class CustomText extends React.Component {
+            constructor(props){
+                super(props);
+                this.textPara=null;
+                this.setTextRef=(element) => {
+                    this.textPara=element;
+                };
+                this.changeText= ()=>{
+                    if(this.textPara){
+                        let i=Math.floor(Math.random()*100)%5;
+                        this.textPara.innerHTML=colors[i];
+                        this.textPara.syle.color=colors[i];
+                    }
+                };
+            }
+            componentDidMount(){
+            }
+            render(){
+                return (
+                    <div>
+                )
+            }
+        }
+		</script>
+	</body>
+</html>
