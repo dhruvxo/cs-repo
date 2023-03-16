@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Dynamic Text</title>
+		<title>Static Text</title>
 		<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
 		<script crossdomain src=	"https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
 		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
@@ -13,14 +13,20 @@
                 super(props);
                 this.setRef=(el) => this.myRef=el;
                 this.showChar=(event)=>{
-                    this.myRef.innerHTML=event.target.value
+                    // if(event.shiftKey)
+                    // txt="<span style='color:red'>"+event.key+"</span>"
+                    // else
+                    this.myRef.innerHTML+=event.key
                 }
+                // this.showChar=(event)=>{
+                //     this.myRef.innerHTML=event.target.value
+                // }
             }
             render(){
                 return(
                     <div>
                         <h3>Enter Text</h3>
-                        <input onChange={this.showChar} type= "text"/>
+                        <input onKeyPress={this.showChar} type= "text"/>
                         <h1 ref={this.setRef}/>
                         </div>
                 )
