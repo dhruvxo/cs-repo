@@ -11,7 +11,7 @@
 		class ReadName extends React.Component{
             constructor(props){
                 super(props);
-                this.state={value:'PES'}
+                this.state={value:'Dhruv'}
                 this.handleChange=this.handleChange.bind(this);
                 this.handleSubmit=this.handleSubmit.bind(this);
                 }
@@ -25,9 +25,12 @@
                 return(
                     <form onSubmit={this.handleSubmit}>
                         <input value={this.state.value} onChange={this.handleChange} type="text"/>
-                        <input type="submit" value="submit"/>
                         <label>
-                            <select onChange={PES,Dhruv}
+                            <select onChange={this.handleChange} value={this.state}>
+                            <option>Dhruv</option>
+                            <option>PES</option>
+                            </select>
+                            <input type="submit" value="submit"/>
                             </label>
                         </form>
                 )
