@@ -10,6 +10,7 @@ void init(PQ *pt)
 {
     pt->n=0;
 }
+
 void display(PQ *pt)
 {
 
