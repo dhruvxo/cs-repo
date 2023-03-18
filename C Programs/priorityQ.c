@@ -72,6 +72,7 @@ int main()
     int ch,k,ele;
     init(&pobj);
     printf("1.Enqueue 2.Dequeue 3.Display\n");
+    
     switch(ch)
     {
         case 1: printf("enter the ele:");
