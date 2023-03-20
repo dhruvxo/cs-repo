@@ -66,7 +66,7 @@ int main()
 	PQ pobj;
 	int ch,k,ele;
 	init(&pobj);
-	printf("1.Enqueue 2.dequeue 3.display\n");
+	printf("1.Enqueue 2.Dequeue 3.Display\n");
 	scanf("%d",&ch);
 	do
 	{
