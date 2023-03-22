@@ -1,6 +1,6 @@
 const chalk=require('chalk')
 
-//import chalk from 'chalk';
+//import chalk from 'chalk@4.1.2';
 
 console.log(chalk.blue('Hello World!'));
 console.log(chalk.blue.bgRed.bold("Hello World"));
