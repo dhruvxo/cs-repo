@@ -1,87 +1,50 @@
-#include<stdlib.h>
-#include<stdio.h>
-#include<stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-typedef struct{
-    unsigned int edge1;
-    unsigned int edge2;
-}edge;
+#define SIZE 13
+#define PRIME 7
 
-bool dfs(unsigned int vertex, bool visited[], bool stack[], unsigned int parent, const edge *edges, unsigned int n)
+void insertIntoHash(int key, int *hashtable)
 {
-    visited[vertex] = true;
-    stack[vertex] = true;
+    int index = key % SIZE;
+    int step = PRIME - (key % PRIME);
+    int i = 1;
 
-    for(unsigned int i = 0; i < n; i++)
-    {
-        if(edges[i].edge1 == vertex || edges[i].edge2 == vertex)
-        {
-            unsigned int neighbour = edges[i].edge1 == vertex ? edges[i].edge2 : edges[i].edge1;
-
-            if(!visited[neighbour])
-            {
-                if(dfs(neighbour, visited, stack, vertex, edges, n))
-                {
-                    return true;
-                }
-            }
-            else if(stack[neighbour] && neighbour != parent)
-            {
-                return true;
-            }
+    while (hashtable[index] != 0) {
+        index = (index + i * step) % SIZE;
+        i++;
+        if (i == SIZE) {
+            printf("Error: Hash table is full\n");
+            exit(1);
         }
     }
 
-    stack[vertex] = false;
-    return false;
+    hashtable[index] = key;
 }
 
-bool find(const edge *edges, unsigned int n, unsigned int order)
+void printHashTable(int *hashtable)
 {
-    bool visited[order];
-    bool stack[order];
-
-    for(unsigned int i = 0; i < order; i++)
-    {
-        visited[i] = false;
-        stack[i] = false;
+    for (int i = 0; i < SIZE; i++) {
+        printf("%d\n", hashtable[i]);
     }
-
-    for(unsigned int i = 0; i < order; i++)
-    {
-        if(!visited[i])
-        {
-            if(dfs(i, visited, stack, -1, edges, n))
-            {
-                return true;
-            }
-        }
-    }
-
-    return false;
 }
 
-int main(void)
+int main()
 {
-    unsigned int order;
-    unsigned int n;
-    scanf("%u", &n);
-    scanf("%u", &order);
-    edge *edges;
-    bool ans;
-    edges = malloc(n*sizeof(edge));
-    if(edges==NULL)
-    {
-        return 1;
+    int n;
+    scanf("%d", &n);
+
+    int stk[n];
+    for (int k = 0; k < n; k++) {
+        scanf("%d", &stk[k]);
     }
-    for(unsigned int i=0;i<n;++i)
-    {
-        scanf("%u", &edges[i].edge1);
-        scanf("%u", &edges[i].edge2);
+
+    int h[SIZE] = {0};
+    for (int i = 0; i < n; i++) {
+        insertIntoHash(stk[i], h);
     }
-        
-    ans= find(edges, n, order);
-    printf(ans? "cyclic":"acyclic");
-    free(edges);
+
+    printHashTable(h);
+
     return 0;
 }
