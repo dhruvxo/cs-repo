@@ -16,16 +16,16 @@ bool dfs(unsigned int vertex, bool visited[], bool stack[], unsigned int parent,
     {
         if(edges[i].edge1 == vertex || edges[i].edge2 == vertex)
         {
-            unsigned int neighbor = edges[i].edge1 == vertex ? edges[i].edge2 : edges[i].edge1;
+            unsigned int neighbour = edges[i].edge1 == vertex ? edges[i].edge2 : edges[i].edge1;
 
-            if(!visited[neighbor])
+            if(!visited[neighbour])
             {
-                if(dfs(neighbor, visited, stack, vertex, edges, n))
+                if(dfs(neighbour, visited, stack, vertex, edges, n))
                 {
                     return true;
                 }
             }
-            else if(stack[neighbor] && neighbor != parent)
+            else if(stack[neighbour] && neighbour != parent)
             {
                 return true;
             }
@@ -36,7 +36,7 @@ bool dfs(unsigned int vertex, bool visited[], bool stack[], unsigned int parent,
     return false;
 }
 
-bool cycle_finder(const edge *edges, unsigned int n, unsigned int order)
+bool find(const edge *edges, unsigned int n, unsigned int order)
 {
     bool visited[order];
     bool stack[order];
@@ -80,7 +80,7 @@ int main(void)
         scanf("%u", &edges[i].edge2);
     }
         
-    ans= cycle_finder(edges, n, order);
+    ans= find(edges, n, order);
     printf(ans? "cyclic":"acyclic");
     free(edges);
     return 0;
