@@ -40,8 +40,17 @@ int main()
     }
 
     int h[SIZE] = {0};
+    int count = 0;
     for (int i = 0; i < n; i++) {
+        if (count == SIZE) {
+            printf("-1\n");
+            break;
+        }
+        if (stk[i] < 0) {
+            continue;
+        }
         insertIntoHash(stk[i], h);
+        count++;
     }
 
     printHashTable(h);
