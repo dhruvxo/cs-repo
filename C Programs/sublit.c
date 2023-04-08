@@ -139,7 +139,6 @@ int find_dist(Graph *adj_mat, int source, int dest) {
     return dist[dest] == INFINITY ? -1 : dist[dest];
 }
 
-
 int main()
 {
     Graph adj_mat;
