@@ -1,0 +1,5 @@
+MOV R0,#10
+lo:
+ADD R0,R0,#10
+CMP R0,#100
+BNE lo

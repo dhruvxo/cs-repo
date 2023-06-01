@@ -1,0 +1,13 @@
+@ .DATA
+@ even:.ASCIZ "EVEN"
+@ odd:.ASCIZ "ODD"
+
+.Text
+MOV R3,#5
+ANDS R2,R3,#1
+BEQ L1
+MOV R2,#0XFF
+B L2
+
+L1: MOV R2,#0X00
+L2: SWI 0X00

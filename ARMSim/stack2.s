@@ -1,0 +1,6 @@
+.TEXT
+MOV R0,#4
+MOV R1,#5
+STMEA R13!,{R0,R1}
+LDMEA R13!,{R0,R1}
+.end

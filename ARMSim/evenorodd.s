@@ -1,0 +1,14 @@
+//Write an ALP to 
+.TEXT
+MOV R0,#5
+ANDS R2,R0,#1
+BEQ L1
+MOV R2,#0xFF
+B L2
+
+L1: MOV R2,#0X00
+L2: SWI 0X011
+
+.DATA
+EVEN: .ASCIZ "Even"
+ODD: .ASCIZ "Odd"
