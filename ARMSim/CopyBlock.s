@@ -1,4 +1,4 @@
-;To copy a block of 512 bytes if data from location A to location B if the rate of data transfer rate is 32 bytes
+@To copy a block of 512 bytes if data from location A to location B if the rate of data transfer rate is 32 bytes
 
 
 .DATA

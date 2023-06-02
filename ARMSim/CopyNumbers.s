@@ -1,4 +1,4 @@
-;Write and ALP to copy n numbers from location a to location b
+@Write and ALP to copy n numbers from location a to location b
 
 .DATA 
 LOC1:.WORD 10,20,30,40,50

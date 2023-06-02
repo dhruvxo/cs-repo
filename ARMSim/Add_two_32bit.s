@@ -1,4 +1,4 @@
-;Write an ALP to add 2 32bit numbers loaded from memory and store the result in memory
+@Write an ALP to add 2 32bit numbers loaded from memory and store the result in memory
 
 .DATA
 	

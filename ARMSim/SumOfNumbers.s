@@ -1,5 +1,4 @@
-;Program to find the sum of n numbers using conditional branch
-;store the result in memory location
+@Program to find the sum of n numbers using conditional branch and store the result in memory location
 
 .DATA
 	A:.BYTE 10,20,30,40,50,60,70,80,90

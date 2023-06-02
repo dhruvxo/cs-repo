@@ -1,4 +1,4 @@
-;compare the value of r0 and r1 add if r0=r1 else subtract
+@compare the value of r0 and r1 add if r0=r1 else subtract
 
 MOV R0,#15
 MOV R1,#5

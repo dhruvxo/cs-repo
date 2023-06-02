@@ -1,5 +1,4 @@
-//Write an ALP to 
-.TEXT
+ .TEXT
 MOV R0,#5
 ANDS R2,R0,#1
 BEQ L1

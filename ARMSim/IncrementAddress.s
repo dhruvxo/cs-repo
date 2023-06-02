@@ -8,4 +8,3 @@ ADD R0,R0,#4
 LDR R2,[R0]
 ADD R0,R0,#4
 LDR R3,[R0]
-

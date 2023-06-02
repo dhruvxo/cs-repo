@@ -1,3 +1,5 @@
+@the code checks whether the value in R0 is equal to 5. If it is, it triggers a software interrupt
+
 ;IF(R0!=5) {R1=R1+R0-R2}
 MOV R0,#4
 MOV R1,#10
