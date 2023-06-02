@@ -1,5 +1,4 @@
-@this code checks the value in R0 and makes branching decisions based on the comparison result
-@second version
+@this code checks the value in R0 and makes branching decisions based on the comparison result v2
 
 MOV R0,#5
 CMP R0,#0
