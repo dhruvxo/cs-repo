@@ -1,0 +1,25 @@
+%Guassian Elimination method to find solution
+format short %display out 4 digit
+clear all % clear the screen
+clc
+%Ex:system of equations 
+% 6*1+4*2+3*3= 6
+% 6*1+4*2+3*3= 0
+% 20*1+15*2+12*3= 0
+info=[6 3 2; 6 4 3;20 15 12]; % Given matrix A 
+b=[6;0;0]; %RHS of the system of equtions
+A=[info b]
+for i=1:size(A,1)
+    for j=i+1:size(A,1)
+        key1=A(j,i)./A(i,i);
+        A(j,:)=A(j,:)-key1.*A(i,:);
+    end
+end
+fprintf("Eclon Matrix A after Row Operations is\n");
+fprintf("=====================");
+A
+x = zeros(1,size(info,2));
+for i = size(A,1):-1:1
+    hg = sum(A(i,i+1:end-1).*x(i+1:end));
+    x(i) = (A(i,end)-hg)./A(i,i);
+end
