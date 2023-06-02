@@ -7,7 +7,7 @@ clc
 % 6*1+4*2+3*3= 0
 % 20*1+15*2+12*3= 0
 info=[6 3 2; 6 4 3;20 15 12]; % Given matrix A 
-b=[6;0;0]; %RHS of the system of equtions
+b=[6;0;0]; %RHS of the system of equations
 A=[info b]
 for i=1:size(A,1)
     for j=i+1:size(A,1)
@@ -15,7 +15,7 @@ for i=1:size(A,1)
         A(j,:)=A(j,:)-key1.*A(i,:);
     end
 end
-fprintf("Eclon Matrix A after Row Operations is\n");
+fprintf("Echlon Matrix A after Row Operations is\n");
 fprintf("=====================");
 A
 x = zeros(1,size(info,2));
