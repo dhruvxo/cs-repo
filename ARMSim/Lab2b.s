@@ -1,0 +1,12 @@
+mov r0,#4
+mov r1,#6
+mov r2,#0
+gcd:cmp r0,r1
+beq res
+blt loop
+sub r0,r0,r1
+b gcd
+loop:sub r1,r1,r0
+b gcd
+res:mov r2,r1
+swi 0x011
