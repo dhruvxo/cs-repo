@@ -10,6 +10,7 @@ var listen2 = function listener2()
 {
     console.log('Second listener is called');
 }
+
 em.on('connection1',listen1);
 em.addListener('connection1',listen2);
 em.emit("connection1")
