@@ -20,7 +20,6 @@ cmp r5,#0
 bne back1
 b again
 
-
 loop2:
 mov r5,#16
 ldr r1,=A
