@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void rotateMatrix(int mat[10][10], int N) {
     // Transpose the matrix
     for (int i = 0; i < N; i++) {
@@ -9,7 +8,6 @@ void rotateMatrix(int mat[10][10], int N) {
             mat[j][i] = temp;
         }
     }
-
     // Reverse each row
     for (int i = 0; i < N; i++) {
         int left = 0;
@@ -23,7 +21,6 @@ void rotateMatrix(int mat[10][10], int N) {
         }
     }
 }
-
 void printMatrix(int mat[10][10], int N) {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++)
@@ -32,7 +29,6 @@ void printMatrix(int mat[10][10], int N) {
     }
     printf("\n");
 }
-
 int main() {
     int N;
     scanf("%d", &N);
@@ -43,9 +39,7 @@ int main() {
             scanf("%d", &mat[i][j]);
         }
     }
-
     rotateMatrix(mat, N);
     printMatrix(mat, N);
-
     return 0;
 }
