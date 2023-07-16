@@ -30,7 +30,6 @@ int main() {
     }
 
     combineStudents(a, n);
-
     for (int i = 0; i < n * 2; i++) {
         printf("%d ", a[i]);
     }
