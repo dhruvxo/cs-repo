@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void search(int arr[], int n, int target) {
     int first = -1, last = -1;
     int low = 0, high = n - 1;
@@ -17,7 +16,6 @@ void search(int arr[], int n, int target) {
             high = mid - 1;
         }
     }
-
     low = 0;
     high = n - 1;
 
