@@ -13,7 +13,6 @@ void dfs(int n,int a[20][20],int src,int v[20])
         }
     }
 }
-
 int main()
 {
     int i,src,j,n,count=0,a[20][20],v[20];
