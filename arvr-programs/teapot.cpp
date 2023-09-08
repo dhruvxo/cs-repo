@@ -94,6 +94,7 @@ void display() {
     glRotatef(angle, 1, 0, 0);
     glutSolidTeapot(1);
     glPopMatrix();
+ 
 
     /* flush drawing routines to the window */
     glFlush();
