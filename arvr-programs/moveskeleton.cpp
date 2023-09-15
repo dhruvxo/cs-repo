@@ -100,6 +100,19 @@ void specialKeys(int key, int x, int y) {
     glutPostRedisplay();
 }
 
+void reshape(int width, int height) {
+    // Set the viewport to cover the new window size
+    glViewport(0, 0, width, height);
+
+    // Set up the projection matrix (you can adjust this as needed)
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluPerspective(45.0f, (float)width / (float)height, 0.1f, 100.0f);
+
+    // Switch back to the modelview matrix
+    glMatrixMode(GL_MODELVIEW);
+}
+
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
