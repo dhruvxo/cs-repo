@@ -11,49 +11,56 @@ void drawSkeleton() {
     // Example: Draw a simple skeleton
     glColor3f(1.0f, 1.0f, 1.0f); // Set color to white
 
+    // Neck
+    glPushMatrix();
+    glTranslatef(0.0f, 0.5f, 0.0f); // Move neck up
+    glScalef(0.15f, 0.2f, 0.15f); // Scale to create a neck shape
+    glutSolidCube(1.0f);
+    glPopMatrix();
+
     // Head
     glPushMatrix();
-    glTranslatef(0.0f, 1.0f, 0.0f);
+    glTranslatef(0.0f, 0.6f, 0.0f); // Move head up from the neck
     glutSolidSphere(0.2f, 20, 20);
     glPopMatrix();
 
     // Body
     glPushMatrix();
-    glTranslatef(0.0f, 0.0f, 0.0f);
-    glScalef(0.4f, 1.0f, 0.2f);
+    glTranslatef(0.0f, 0.0f, 0.0f); // Body position
+    glScalef(0.4f, 0.8f, 0.2f); // Scale to make it narrower and taller
     glutSolidCube(1.0f);
     glPopMatrix();
 
     // Left Arm
     glPushMatrix();
-    glTranslatef(-0.4f, 0.5f, 0.0f);
+    glTranslatef(-0.4f, 0.4f, 0.0f);
     glRotatef(45.0f, 0.0f, 0.0f, 1.0f);
-    glScalef(0.2f, 0.8f, 0.2f);
+    glScalef(0.15f, 0.6f, 0.15f); // Slimmer arm
     glutSolidCube(1.0f);
     glPopMatrix();
 
     // Right Arm
     glPushMatrix();
-    glTranslatef(0.4f, 0.5f, 0.0f);
+    glTranslatef(0.4f, 0.4f, 0.0f);
     glRotatef(-45.0f, 0.0f, 0.0f, 1.0f);
-    glScalef(0.2f, 0.8f, 0.2f);
+    glScalef(0.15f, 0.6f, 0.15f); // Slimmer arm
     glutSolidCube(1.0f);
     glPopMatrix();
 
-    // Left Leg (3D oval approximation)
+    // Left Leg (Slim Rectangle)
     glPushMatrix();
-    glTranslatef(-0.2f, -0.8f, 0.0f);
+    glTranslatef(-0.2f, -0.5f, 0.0f);
     glRotatef(30.0f, 1.0f, 0.0f, 0.0f);
-    glScalef(0.2f, 0.8f, 0.5f);
-    glutSolidSphere(0.5f, 20, 20);
+    glScalef(0.1f, 0.6f, 0.1f); // Slim rectangle shape
+    glutSolidCube(1.0f);
     glPopMatrix();
 
-    // Right Leg (3D oval approximation)
+    // Right Leg (Slim Rectangle)
     glPushMatrix();
-    glTranslatef(0.2f, -0.8f, 0.0f);
+    glTranslatef(0.2f, -0.5f, 0.0f);
     glRotatef(30.0f, 1.0f, 0.0f, 0.0f);
-    glScalef(0.2f, 0.8f, 0.5f);
-    glutSolidSphere(0.5f, 20, 20);
+    glScalef(0.1f, 0.6f, 0.1f); // Slim rectangle shape
+    glutSolidCube(1.0f);
     glPopMatrix();
 }
 
