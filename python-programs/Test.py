@@ -1,8 +1,10 @@
 import sys
 import importlib
 import argparse
-import torch
+import numpy as np
+import warnings
 
+warnings.filterwarnings("ignore")
 parser = argparse.ArgumentParser()
 parser.add_argument("--ID", required=True)
 
@@ -13,77 +15,57 @@ subname = args.ID
 try:
     mymodule = importlib.import_module(subname)
 except Exception as e:
+    print(e)
     print(
-        "Rename your written program as  CAMPUS_SECTION_SRN_Lab1.py and run python Test.py --ID  CAMPUS_SECTION_SRN_Lab1 "
+        "Rename your written program as CAMPUS_SECTION_SRN_Lab3.py and run python Test.py --ID  CAMPUS_SECTION_SRN_Lab3 "
     )
     sys.exit()
 
-
-get_selected_attribute = mymodule.get_selected_attribute
-get_information_gain = mymodule.get_information_gain
-get_avg_info_of_attribute = mymodule.get_avg_info_of_attribute
-get_entropy_of_dataset = mymodule.get_entropy_of_dataset
-
+prepareData = mymodule.prepareData
+CNN = mymodule.CNN
+train = mymodule.train
+evaluate = mymodule.evaluate
 
 def test_case():
-    outlook = torch.tensor([1,1,1,1,2,2,2,2,2,3,3,3,3,3]).unsqueeze(1)
-    temp = torch.tensor([1,2,3,1,3,2,2,3,3,1,1,3,2,3]).unsqueeze(1)
-    humidity = torch.tensor([1,2,1,2,1,2,2,2,1,1,1,1,2,2]).unsqueeze(1)
-    windy = torch.tensor([0,1,1,0,0,0,1,0,1,0,1,0,0,1]).unsqueeze(1)
-    play = torch.tensor([1,1,1,1,1,1,0,1,0,0,0,0,1,1]).unsqueeze(1)
-    dataset = torch.cat((outlook,temp,humidity,windy,play),dim=1)
+   
+    train_loader,test_loader = prepareData([1,8,9],{
+        1:0,
+        8:1,
+        9:2
+    })
+    model = CNN()
+    # Train the model
+    train_accuracy = train(model,train_loader)
+    
+    # Evaluate the model on the test set
+    test_accuracy = evaluate(model,test_loader)
+    
+    try: 
+        if train_accuracy>=60:
+            print("Test Case 1 for the function train PASSED")
+        else:
+            print("Test Case 1 for the function train FAILED")
+    except Exception as e:
+        print(e)
+        print("Test Case 1 for the function train FAILED [ERROR]")
+
+    try: 
+        if test_accuracy>=70:
+            print("Test Case 2 for the function evaluate PASSED")
+        else:
+            print("Test Case 2 for the function evaluate FAILED")
+    except Exception as e:
+        print(e)
+        print("Test Case 2 for the function evaluate FAILED [ERROR]")
 
     try:
-        if get_entropy_of_dataset(dataset) >= 0.938 and get_entropy_of_dataset(dataset) <= 0.942:
-            print("Test Case 1 for the function get_entropy_of_dataset PASSED")
+        if(len(list(model.children())) <=9):
+            print("Test Case 3 for the function __init__ PASSED")
         else:
-            print("Test Case 1 for the function get_entropy_of_dataset FAILED")
-    except:
-        print("Test Case 1 for the function get_entropy_of_dataset FAILED [ERROR]")
-
-    try:
-        if (
-            get_avg_info_of_attribute(dataset, 0) >= 0.691
-            and get_avg_info_of_attribute(dataset, 0) <= 0.695
-        ):
-            print("Test Case 2 for the function get_avg_info_of_attribute PASSED")
-        else:
-            print("Test Case 2 for the function get_avg_info_of_attribute FAILED")
-
-    except:
-        print("Test Case 2 for the function get_avg_info_of_attribute FAILED [ERROR]")
-
-    try:
-        
-        if (
-            get_avg_info_of_attribute(dataset, 1) >= 0.908
-            and get_avg_info_of_attribute(dataset, 1) <= 0.914
-        ):
-            print("Test Case 3 for the function get_avg_info_of_attribute PASSED")
-        else:
-            print("Test Case 3 for the function get_avg_info_of_attribute FAILED")
-
-    except:
-        print("Test Case 3 for the function get_avg_info_of_attribute FAILED [ERROR]")
-
-    try:
-        columns = [0, 1, 2, 3, 4]
-        ans = get_selected_attribute(dataset)
-        dictionary = ans[0]
-        flag = (
-            (dictionary[0] >= 0.244 and dictionary[0] <= 0.248)
-            and (dictionary[1] >= 0.0292 and dictionary[1] <= 0.0296)
-            and (dictionary[2] >= 0.150 and dictionary[2] <= 0.154)
-            and (dictionary[3] >= 0.046 and dictionary[3] <= 0.05)
-            and (ans[1] == 0)
-        )
-        if flag:
-            print("Test Case 4 for the function get_selected_attribute PASSED")
-        else:
-            print("Test Case 4 for the function get_selected_attribute FAILED")
-    except:
-        print("Test Case 4 for the function get_selected_attribute FAILED [ERROR]")
-
+            print("Test Case 3 for the function __init__ FAILED")
+    except  Exception as e:
+        print(e)
+        print("Test Case 3 for the function __init__ FAILED [ERROR]")
 
 if __name__ == "__main__":
     test_case()
