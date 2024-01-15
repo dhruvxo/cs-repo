@@ -1,6 +1,6 @@
-list=[1,2,3,4]
-print(list)
-print(list[2])
-list1=['a','b','c','c']
-print(list1)
-print(len[list1])
+lst = [1, 2, 3, 4]
+print(lst)
+print(lst[2])
+lst1 = ['a', 'b', 'c', 'c']
+print(lst1)
+print(len(lst1))
