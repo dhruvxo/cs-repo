@@ -6,6 +6,6 @@ fn main(){
         println!("x={}",x);
         if x==15{
         break;
+        }
     }
-}
 }
