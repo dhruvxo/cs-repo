@@ -1,8 +1,8 @@
 //write a rust program to perform match operation
 fn main(){
-    const STATE_CODE:&str="MH";
+    const STATE_CODE:&str="KA";
     let state = match STATE_CODE {
-    "MH" => {println!("Found match to MH");"Maharashtra"},
+    "KA" => {println!("Found match to KA");"Karnataka"},
     "KL" => "Kerala",
     _ => "Unknown"
 };
