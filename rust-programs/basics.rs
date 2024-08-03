@@ -8,7 +8,6 @@ fn main() {
     // let interest:f32 = 80000.35;
     // let cost: f64= 15_000.600;
     // let int_with_seperator = 50_000;
-
     // println!("result value is {}",result);
     // println!("interest and cost is {} and {} respectively",interest,cost);
     // println!("int value {}",int_with_seperator);   
@@ -17,7 +16,6 @@ fn main() {
     // let special_character = '@';
     // let alphabet:char = 'A';
     // let emoji:char = '👍';
-
     // println!("Special Character is {}", special_character);
     // println!("Alphabet is {}", alphabet);
     // println!("Emoji is {}",emoji);

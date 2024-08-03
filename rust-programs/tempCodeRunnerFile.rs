@@ -1,1 +1,0 @@
-Write a Rust program that processes a list of tuples, where each tuple consists of a string("even" or "odd") and an integer. The program should insert these tuples ito a HashMap such that the keys are the strings and the values are vectors of integers. The program should then print the resulting HashMap.
